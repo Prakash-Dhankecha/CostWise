@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { scrapeAmazonProduct } from "../scraper";
-import { connectToDB } from "../scraper/mongoose";
+import { connectToDB } from "../mongoose";
 import Product from "../models/product.model";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { User } from "@/types";
