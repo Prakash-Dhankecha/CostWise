@@ -11,7 +11,7 @@ const productSchema = new mongoose.Schema(
     priceHistory: [
       {
         price: { type: Number, required: true },
-        date: { type: Date, default: Date.now }
+        date: { type: Date, default: Date.now },
       },
     ],
     lowestPrice: { type: Number },
@@ -20,7 +20,7 @@ const productSchema = new mongoose.Schema(
     discountRate: { type: Number },
     description: { type: String },
     category: { type: String },
-    reviewCount: { type: Number },
+    reviewsCount: { type: Number },
     isOutOfStock: { type: Boolean, default: false },
     users: [{ email: { type: String, required: true } }],
     default: [],
